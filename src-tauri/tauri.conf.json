@@ -1,0 +1,43 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "tauri-vue-template",
+  "version": "0.1.0",
+  "identifier": "com.tauri-vue-template.app",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "TauriVueTemplate",
+        "width": 1000,
+        "height": 600,
+        "resizable": true,
+        "fullscreen": false,
+        "minWidth": 800,
+        "minHeight": 600
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "copyright": "© 2025 版权所有",
+    "shortDescription": "A Tauri Vue Template",
+    "longDescription": "This is a template for building cross-platform desktop applications using the Tauri framework. It integrates the popular Vue library for crafting the user interface. Leveraging Tauri's Rust backend, this template provides a pre-configured starting point, enabling developers to quickly build lightweight and secure desktop apps with familiar web technologies.",
+    "publisher": "zara"
+  }
+}
