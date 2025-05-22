@@ -1,5 +1,6 @@
 import { defineConfig, loadEnv } from "vite";
 import vue from "@vitejs/plugin-vue";
+import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'path';
 
@@ -12,7 +13,7 @@ export default defineConfig(async ({ command, mode }) => {
 
   return {
     envPrefix: "ALTEREM_",
-    plugins: [vue(), tailwindcss()],
+    plugins: [vue(), vueDevTools(), tailwindcss()],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, 'src'),
