@@ -1,4 +1,4 @@
-# Tauri + Vue + Vite + Tailwind CSS + Element Plus 模板项目
+# Tauri + Vue + Vite + Tailwind CSS + Naive UI 模板项目
 
 ![Build Status](https://github.com/alterem/tauri-vue-template/actions/workflows/build.yml/badge.svg) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/alterem/tauri-vue-template)
 
@@ -10,7 +10,7 @@ A modern, fast cross-platform desktop application template.
 
 ## ✨ 项目概览
 
-此模板使用 **Tauri** 构建轻量、安全的跨平台桌面应用。它集成了现代前端技术栈：**Vue** (UI)、**Vite** (构建工具)、**Tailwind CSS** (CSS 框架) 和 **Element Plus** (UI 组件库)。它使用 **pnpm** 进行依赖管理，并使用 **TypeScript** 提升开发者体验和代码质量。
+此模板使用 **Tauri** 构建轻量、安全的跨平台桌面应用。它集成了现代前端技术栈：**Vue** (UI)、**Vite** (构建工具)、**Tailwind CSS** (CSS 框架) 和 **Naive UI** (UI 组件库)。它使用 **pnpm** 进行依赖管理，并使用 **TypeScript** 提升开发者体验和代码质量。
 
 结合 Rust 后端和现代前端，它是构建高性能、安全桌面应用的理想起点。
 
@@ -22,7 +22,7 @@ A modern, fast cross-platform desktop application template.
 *   **Vue**: 一个用于构建用户界面的渐进式 JavaScript 框架。
 *   **Vite**: 下一代前端构建工具，以其快速的开发服务器启动和构建速度而闻名。
 *   **Tailwind CSS**: 一个实用至上的 CSS 框架，通过组合类名实现快速 UI 构建。
-*   **Element Plus**: 一个面向开发者、设计师和产品经理的 Vue 3 UI 组件库，开箱即用。
+*   **Naive UI**: 一个全面、快速、美观的 Vue 3 UI 组件库，开箱即用。
 *   **pnpm**: 一个快速且节省磁盘空间的包管理器。
 *   **TypeScript**: JavaScript 的超集，提供静态类型检查，提高代码可维护性。
 *   **@types/node**: 提供 Node.js API 的类型定义。
@@ -70,7 +70,7 @@ A modern, fast cross-platform desktop application template.
 
 3.  **在开发模式下运行**:
     ```bash
-    pnpm dev
+    pnpm tauri dev
     ```
     启动 Tauri 应用，加载 Vite 开发服务器，提供热重载等开发便利。
 
@@ -79,7 +79,7 @@ A modern, fast cross-platform desktop application template.
 要构建生产可执行文件，运行：
 
 ```bash
-pnpm build
+pnpm tauri build
 ```
 
 构建后，可执行文件通常位于 `src-tauri/target/release/` 目录中。
@@ -125,21 +125,23 @@ pnpm build
 
 ## 📸 截图
 
-展示默认 **Vue + Element Plus** 界面和集成的应用截图：
+展示默认 **Vue + Naive UI** 界面和集成的应用截图：
 
-![Home](https://raw.githubusercontent.com/alterem/picFB/master/uPic/2025/05/22/Alterem2025-05-22_11-57-14.jpg)
+![Home](https://raw.githubusercontent.com/alterem/picFB/master/uPic/2025/05/22/zmQ9Tt.png)
 
-![Counter](https://raw.githubusercontent.com/alterem/picFB/master/uPic/2025/05/22/Alterem2025-05-22_11-57-18.jpg)
+![Counter](https://raw.githubusercontent.com/alterem/picFB/master/uPic/2025/05/22/RTBC83.png)
 
-![About](https://raw.githubusercontent.com/alterem/picFB/master/uPic/2025/05/22/Alterem2025-05-22_11-57-24.jpg)
+![Compomemt](https://raw.githubusercontent.com/alterem/picFB/master/uPic/2025/05/22/W8b7tE.png)
 
-![Dark](https://raw.githubusercontent.com/alterem/picFB/master/uPic/2025/05/22/lSlwqZ.png)
+![About](https://raw.githubusercontent.com/alterem/picFB/master/uPic/2025/05/22/CYmNRR.png)
 
-**注意:** 上面的截图链接是原始模板的占位符。请将它们替换为您实际的 Vue + Element Plus 应用界面截图。将截图文件放在合适的位置（例如，`screenshots` 文件夹或链接到托管服务），并更新图片 URL。
+![Dark](https://raw.githubusercontent.com/alterem/picFB/master/uPic/2025/05/22/sY0ifv.png)
+
+**注意:** 上面的截图链接是原始模板的占位符。请将它们替换为您实际的 Vue + Naive UI 应用界面截图。将截图文件放在合适的位置（例如，`screenshots` 文件夹或链接到托管服务），并更新图片 URL。
 
 ## ⚙️ 定制
 
-*   **前端**: 修改 `src/` 目录中的 **Vue 代码**（**`.vue` 文件**）、样式文件（`src/index.css` 或其他）和 `tailwind.config.js` 来定制 UI 和功能。**根据需要使用 Element Plus 组件。**
+*   **前端**: 修改 `src/` 目录中的 **Vue 代码**（**`.vue` 文件**）、样式文件（`src/index.css` 或其他）和 `tailwind.config.js` 来定制 UI 和功能。**根据需要使用 Naive UI 组件。**
 *   **后端**: 修改 `src-tauri/src/main.rs` 和 `src-tauri/tauri.conf.json` 来调整 Tauri 配置、添加 Rust 后端逻辑或调用系统 API。
 *   **依赖**: 使用 `pnpm add <package>` 或 `pnpm remove <package>` 管理项目依赖。
 

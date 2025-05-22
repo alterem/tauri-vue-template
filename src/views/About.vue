@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen p-4 text-left">
+  <div class="flex flex-col h-100vh p-4 text-left">
     <p class="text-gray-700 dark:text-gray-300 mb-4">
       这是一个使用现代前端技术和 Tauri 构建的跨平台桌面应用模板。
       旨在提供一个快速、安全且易于扩展的开发起点。
@@ -12,7 +12,7 @@
         <li>Vue 3: 渐进式 JavaScript 框架</li>
         <li>Vite: 快速前端构建工具</li>
         <li>Tailwind CSS: 实用至上 CSS 框架</li>
-        <li>Element Plus: Vue 3 UI 组件库</li>
+        <li>Naive UI: Vue 3 UI 组件库</li>
         <li>Pinia: Vue 状态管理库</li>
         <li>Vitest: 单元测试框架</li>
         <li>Lodash-es: 实用工具函数库</li>

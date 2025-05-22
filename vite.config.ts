@@ -3,6 +3,9 @@ import vue from "@vitejs/plugin-vue";
 import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'path';
+import AutoImport from 'unplugin-auto-import/vite';
+import Components from 'unplugin-vue-components/vite';
+import { NaiveUiResolver } from 'unplugin-vue-components/resolvers';
 
 const host = process.env.TAURI_DEV_HOST;
 
@@ -13,7 +16,27 @@ export default defineConfig(async ({ command, mode }) => {
 
   return {
     envPrefix: "ALTEREM_",
-    plugins: [vue(), vueDevTools(), tailwindcss()],
+    plugins: [
+      vue(),
+      vueDevTools(),
+      tailwindcss(),
+      AutoImport({
+        imports: [
+          'vue',
+          {
+            'naive-ui': [
+              'useDialog',
+              'useMessage',
+              'useNotification',
+              'useLoadingBar'
+            ]
+          }
+        ]
+      }),
+      Components({
+        resolvers: [NaiveUiResolver()]
+      })
+    ],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, 'src'),
