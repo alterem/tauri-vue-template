@@ -1,6 +1,13 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -18,6 +25,15 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
+  /* element-plus 自定义主题变量 */
+  /* --el-color-primary: #8e44ad;
+  --el-color-success: #27ae60;
+  --el-color-warning: #f39c12;
+  --el-color-danger: #c0392b;
+  --el-color-error: #c0392b;
+  --el-color-info: #3498db; */
 }
 
 :root.dark {

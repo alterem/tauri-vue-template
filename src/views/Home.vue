@@ -15,7 +15,7 @@ const greet = debounce(async () => {
 </script>
 
 <template>
-  <div class="flex flex-col items-center min-h-screen p-4 text-center">
+  <div class="flex flex-col items-center h-100vh py-4 text-center">
     <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">{{ message }}</h2>
 
     <div class="flex items-center justify-center space-x-6 mb-6">

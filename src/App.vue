@@ -12,6 +12,7 @@ const toggleDark = useToggle(isDark);
         <div class="absolute left-1/2 transform -translate-x-1/2 flex space-x-4">
           <RouterLink to="/" class="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">首页</RouterLink>
           <RouterLink to="/counter" class="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">计数器</RouterLink>
+          <RouterLink to="/component" class="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">组件展示</RouterLink>
           <RouterLink to="/about" class="text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">关于</RouterLink>
         </div>
         <div class="flex-shrink-0 ml-auto">
