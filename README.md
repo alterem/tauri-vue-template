@@ -135,8 +135,6 @@ pnpm build
 
 ![Dark](https://raw.githubusercontent.com/alterem/picFB/master/uPic/2025/05/22/lSlwqZ.png)
 
-**注意:** 上面的截图链接是原始模板的占位符。请将它们替换为您实际的 Vue + Element Plus 应用界面截图。将截图文件放在合适的位置（例如，`screenshots` 文件夹或链接到托管服务），并更新图片 URL。
-
 ## ⚙️ 定制
 
 *   **前端**: 修改 `src/` 目录中的 **Vue 代码**（**`.vue` 文件**）、样式文件（`src/index.css` 或其他）和 `tailwind.config.js` 来定制 UI 和功能。**根据需要使用 Element Plus 组件。**
