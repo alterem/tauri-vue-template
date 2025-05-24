@@ -125,8 +125,6 @@ pnpm build
 
 ## 📸 截图
 
-展示默认 **Vue + Element Plus** 界面和集成的应用截图：
-
 ![Home](https://raw.githubusercontent.com/alterem/picFB/master/uPic/2025/05/22/Alterem2025-05-22_11-57-14.jpg)
 
 ![Counter](https://raw.githubusercontent.com/alterem/picFB/master/uPic/2025/05/22/Alterem2025-05-22_11-57-18.jpg)
