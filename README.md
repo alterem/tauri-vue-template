@@ -58,10 +58,9 @@ A modern, fast cross-platform desktop application template.
 
 1.  **克隆仓库**:
     ```bash
-    git clone <repository_url>
-    cd tauri-vue-template # 假设您将仓库克隆到此目录
+    git clone https://github.com/alterem/tauri-vue-template -b naiveui
+    cd tauri-vue-template
     ```
-    *将 `<repository_url>` 替换为实际的仓库 URL。*
 
 2.  **安装依赖**:
     ```bash
